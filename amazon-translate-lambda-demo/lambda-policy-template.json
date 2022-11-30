@@ -1,0 +1,27 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:~~ACCOUNT~~:log-group:/aws/lambda/~~FUNCTION_NAME~~:*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::~~INPUT_BUCKET~~/*",
+                "arn:aws:s3:::~~OUTPUT_BUCKET~~/*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
+}

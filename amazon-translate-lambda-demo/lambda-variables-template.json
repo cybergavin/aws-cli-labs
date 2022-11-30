@@ -1,0 +1,8 @@
+{
+    "Variables": {
+      "SourceLanguageCode": "~~SOURCE_LANGUAGE~~",
+      "TargetBucketName": "~~TARGET_BUCKET~~",
+      "TargetLanguageCode": "~~TARGET_LANGUAGE~~"
+    }
+  }
+  

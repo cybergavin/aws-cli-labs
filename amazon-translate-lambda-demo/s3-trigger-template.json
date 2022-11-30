@@ -1,0 +1,10 @@
+{
+    "LambdaFunctionConfigurations": [
+        {
+            "LambdaFunctionArn": "arn:aws:lambda:~~REGION~~:~~ACCOUNT~~:function:~~FUNCTION_NAME~~",
+            "Events": [
+                "s3:ObjectCreated:Put"
+            ]
+        }
+    ]
+}
