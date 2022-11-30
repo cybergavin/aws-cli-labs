@@ -95,6 +95,7 @@ aws lambda add-permission \
     --action lambda:InvokeFunction \
     --principal s3.amazonaws.com \
     --source-arn arn:aws:s3:::$INPUT_BUCKET \
+    --source-account $ACCOUNT
     --statement-id 7777${myrnd,,}
 #
 # Configure S3 trigger for Lambda function
